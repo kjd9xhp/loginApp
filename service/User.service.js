@@ -1,11 +1,10 @@
-const User = require('../models/users')
-
+const User = require("../models/users");
 
 module.exports = {
-    getAll
-}
+  getAll,
+};
 
-async function getAll(req, res){
-    const rs = await User.find().select()
-     return rs
+async function getAll() {
+  const rs = await User.find().select();
+  return rs;
 }
